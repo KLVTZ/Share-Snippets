@@ -13,5 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	DB::table('tasks')->insert(['title' => 'My first Task']);
+
+	return DB::table('tasks')->get();	
 });
