@@ -41,8 +41,10 @@ class SnippetsController extends BaseController {
 	 */
 	public function show($id)
 	{
-		$snippet = Snippet::find($id)->toArray();
-		return View::make('snippets.show', $snippet);
+		$snippet = Snippet::find($id);
+		if(!$snippet) return Redirect::route('new_snippet');
+
+		return View::make('snippets.show', $snippet->toArray());
 	}
 
 
