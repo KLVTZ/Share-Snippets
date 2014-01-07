@@ -20,12 +20,7 @@ class SnippetsController extends BaseController {
 	 */
 	public function store()
 	{
-		$validation_errors = Snippet::validate(Input::get());
-
-		if($validation_errors) {
-			return Redirect::route('new_snippet');
-		}
-
+		$validation_erros = Snippet::validate(Input::get());
 		$new_snippet = Snippet::create(array('snippet' => Input::get('snippet')));
 
 		if($new_snippet) {
