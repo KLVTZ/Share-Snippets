@@ -9,8 +9,9 @@ class SnippetsController extends BaseController {
 	 */
 	public function create()
 	{
-		return View::make('snippets.create')->
-			with('snippet', '');	
+		// return View::make('snippets.create')->
+		// 	with('snippet', '');	
+		return 'hi';
 	}
 
 	/**
