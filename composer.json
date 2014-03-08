@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"way/generators": "dev-master",
-		"anahkiasen/rocketeer": "dev-master"
+		"anahkiasen/rocketeer": "dev-master",
+		"iron-io/iron_mq": "1.5.1"
 	},
 	"autoload": {
 		"classmap": [
