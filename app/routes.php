@@ -19,19 +19,19 @@ Route::post('/', array('uses' => 'SnippetsController@store'));
 
 Route::get('/', function()
 {
-	Queue::push('DoSomething');
-
-	return 'Done';
+	Queue::push('FileTimeWriter', ['time' => time()]);
 });
 
-class DoSomething 
+Route::post('queue', function()
 {
-	public function fire($job)
-	{
-		File::append(app_path().'/queue/txt', time(), PHP_EOL);
+	return Queue::marshal();
+});
 
-		$job->delete();
+class FileTimeWriter
+{
+	public function fire($job, $data)
+	{
+		File::append(app_path() . '/time.txt', $data['time'] . PHP_EOL);
 	}
 }
-
 
