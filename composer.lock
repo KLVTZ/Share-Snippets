@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2270f198afc779e0c854c52faad39ecd",
+    "hash": "b7ea44de6b0840960debe8a989575e7f",
     "packages": [
         {
             "name": "anahkiasen/rocketeer",
@@ -298,16 +298,16 @@
         },
         {
             "name": "iron-io/iron_mq",
-            "version": "1.4.8",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/iron-io/iron_mq_php.git",
-                "reference": "05a4b53cb0579822495325d5bcf05556fce9f8b0"
+                "reference": "82dde27337801a914a5ac88cd5f1ba7739f85f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iron-io/iron_mq_php/zipball/05a4b53cb0579822495325d5bcf05556fce9f8b0",
-                "reference": "05a4b53cb0579822495325d5bcf05556fce9f8b0",
+                "url": "https://api.github.com/repos/iron-io/iron_mq_php/zipball/82dde27337801a914a5ac88cd5f1ba7739f85f19",
+                "reference": "82dde27337801a914a5ac88cd5f1ba7739f85f19",
                 "shasum": ""
             },
             "require": {
@@ -339,7 +339,7 @@
                 "iron",
                 "iron_mq"
             ],
-            "time": "2013-09-07 15:06:30"
+            "time": "2014-02-19 14:02:39"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -1780,7 +1780,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "way/generators": 20,
-        "anahkiasen/rocketeer": 20
+        "anahkiasen/rocketeer": 20,
+        "iron-io/iron_mq": 20
     },
     "platform": [
 
