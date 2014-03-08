@@ -20,8 +20,6 @@ Route::post('/', array('uses' => 'SnippetsController@store'));
 // Queue for iron.io
 Route::post('queue', function()
 {
-	Log::info('marshal!');
-	return Queue::marshal();
 });
 
 
