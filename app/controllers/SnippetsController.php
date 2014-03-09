@@ -9,9 +9,8 @@ class SnippetsController extends BaseController {
 	 */
 	public function create()
 	{
-		// return View::make('snippets.create')->
-		// 	with('snippet', '');	
-		return 'hi';
+		return View::make('snippets.create')->
+			with('snippet', '');
 	}
 
 	/**
@@ -49,7 +48,7 @@ class SnippetsController extends BaseController {
 	}
 
 
-	public function fork($id) 
+	public function fork($id)
 	{
 		$snippet = Snippet::find($id);
 		if(!$snippet) return Redirect::route('new_snippet');
