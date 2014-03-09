@@ -22,7 +22,7 @@
 	// and store them locally
 	'connections' => array(
 		'production' => array(
-			'host'      => 'u-short-snippet@ssh2.eu1.frbit.com',
+			'host'      => 'ssh2.eu1.frbit.com',
 			'username'  => 'u-short-snippet',
 			'password'  => 'fc9UXSWxGyITFZMy',
 			'key'       => '',
