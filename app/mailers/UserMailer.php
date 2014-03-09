@@ -7,7 +7,7 @@ class UserMailer extends Mailer {
 	{
 		$view = 'emails.welcome';
 		$data = [];
-		$subject = 'Welcome to Snippets!';
+		$subject = 'Welcome to Queue!';
 
 		return $this->sendTo($user, $subject, $view, $data);
 

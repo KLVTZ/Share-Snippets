@@ -14,6 +14,11 @@
 Route::get('users/store', 'UsersController@store');
 Route::resource('users', 'UsersController');
 
+Route::post('queue', function()
+{
+	return Queue::marshal();
+});
+
 
 Route::get('/', array('as' => 'new_snippet', 'uses' => 'SnippetsController@create'));
 Route::get('{num}', array('as' => 'snippet', 'uses' => 'SnippetsController@show'));
