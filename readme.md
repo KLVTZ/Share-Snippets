@@ -1,5 +1,6 @@
 ## Share Snippets via Laravel 4
 
-A simple tool for storing, forking, and pushing code for easy gist capabilities ( missing version control, of course! ;) ).
-
+Fork, Edit, Save Snippets
+![Demo](http://gfycat.com/AcidicUnfoldedHornedviper#?format=gif "Demo)
+*Design and Learning via Laracast*
 
