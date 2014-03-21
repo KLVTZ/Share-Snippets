@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function()
 {
 	Queue::push('DoSomethingIntensive');
