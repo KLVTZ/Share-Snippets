@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b7ea44de6b0840960debe8a989575e7f",
+    "hash": "6e7c5e2cc25857f74b7c18c4abcc77c6",
     "packages": [
         {
             "name": "anahkiasen/rocketeer",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Anahkiasen/rocketeer.git",
-                "reference": "762de053e970aeb4ef2cd848fe73c5c116b87599"
+                "reference": "c0ecd5773611c65256fbc7e1dea4e3780a19c743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Anahkiasen/rocketeer/zipball/762de053e970aeb4ef2cd848fe73c5c116b87599",
-                "reference": "762de053e970aeb4ef2cd848fe73c5c116b87599",
+                "url": "https://api.github.com/repos/Anahkiasen/rocketeer/zipball/c0ecd5773611c65256fbc7e1dea4e3780a19c743",
+                "reference": "c0ecd5773611c65256fbc7e1dea4e3780a19c743",
                 "shasum": ""
             },
             "require": {
@@ -26,12 +26,12 @@
                 "illuminate/events": "~4",
                 "illuminate/filesystem": "~4",
                 "illuminate/log": "~4",
+                "illuminate/remote": "~4",
                 "illuminate/support": "~4",
                 "php": ">=5.3.0"
             },
             "require-dev": {
                 "herrera-io/box": "dev-master",
-                "illuminate/remote": "~4",
                 "mockery/mockery": "dev-master",
                 "nesbot/carbon": "dev-master",
                 "patchwork/utf8": "dev-master",
@@ -47,14 +47,14 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "1.1-dev"
+                    "dev-develop": "1.3-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Rocketeer\\": [
                         "src/Rocketeer",
-                        "tests/"
+                        "tests"
                     ]
                 }
             },
@@ -74,7 +74,7 @@
                 "laravel",
                 "ssh"
             ],
-            "time": "2014-02-12 12:56:44"
+            "time": "2014-03-10 14:56:07"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -207,6 +207,54 @@
                 "zf2"
             ],
             "time": "2013-12-04 14:19:30"
+        },
+        {
+            "name": "illuminate/remote",
+            "version": "v4.1.24",
+            "target-dir": "Illuminate/Remote",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/remote.git",
+                "reference": "ad124eef71da9d9803af1bfd17c7a638fcc01950"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/remote/zipball/ad124eef71da9d9803af1bfd17c7a638fcc01950",
+                "reference": "ad124eef71da9d9803af1bfd17c7a638fcc01950",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.1.*",
+                "php": ">=5.3.0",
+                "phpseclib/phpseclib": "0.3.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Remote": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com",
+                    "homepage": "https://github.com/taylorotwell",
+                    "role": "Developer"
+                }
+            ],
+            "time": "2014-01-22 07:41:19"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -391,16 +439,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v4.1.23",
+            "version": "v4.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "054c1a29aaf537c6c6ca7e7804375c671eddcaaf"
+                "reference": "4f69e545e0ca19b54010ca4c68a66ba6de6e853c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/054c1a29aaf537c6c6ca7e7804375c671eddcaaf",
-                "reference": "054c1a29aaf537c6c6ca7e7804375c671eddcaaf",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/4f69e545e0ca19b54010ca4c68a66ba6de6e853c",
+                "reference": "4f69e545e0ca19b54010ca4c68a66ba6de6e853c",
                 "shasum": ""
             },
             "require": {
@@ -463,7 +511,7 @@
                 "iron-io/iron_mq": "1.5.*",
                 "mockery/mockery": "0.9.*",
                 "pda/pheanstalk": "2.1.*",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.0.*"
             },
             "suggest": {
                 "doctrine/dbal": "Allow renaming columns and dropping SQLite columns."
@@ -504,7 +552,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2014-02-28 22:07:47"
+            "time": "2014-03-17 15:49:21"
         },
         {
             "name": "monolog/monolog",
@@ -1729,12 +1777,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
-                "reference": "e1d1a3235ba2c712127317bdf01132ea99095995"
+                "reference": "d45aabaa0704f25895a1ae2198d2cd6226ad2bcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/e1d1a3235ba2c712127317bdf01132ea99095995",
-                "reference": "e1d1a3235ba2c712127317bdf01132ea99095995",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/d45aabaa0704f25895a1ae2198d2cd6226ad2bcb",
+                "reference": "d45aabaa0704f25895a1ae2198d2cd6226ad2bcb",
                 "shasum": ""
             },
             "require": {
@@ -1768,7 +1816,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-03-08 01:59:28"
+            "time": "2014-03-19 21:33:49"
         }
     ],
     "packages-dev": [

@@ -50,8 +50,8 @@ return array(
 
 		'iron' => array(
 			'driver'  => 'iron',
-			'project' => '531ab78c3558d20009000042',
-			'token'   => '29O9X8d2dWlZmQnLYBzsgA7hT9s',
+			'token'   => 'PQ6B47G0HgBUW5Z3Ac4GEfpLPuw',
+			'project' => '532b8aebb6c1530009000017',
 			'queue'   => 'app',
 		),
 
