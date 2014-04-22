@@ -1,5 +1,5 @@
-<?php
 
+<?php
 class Snippet extends Eloquent {
 	protected $guarded = array();
 	public $timestamps = false;
@@ -9,7 +9,7 @@ class Snippet extends Eloquent {
 		'snippet' => 'required'
 	);
 
-	public static function validate($input) 
+	public static function validate($input)
 	{
 		$v = Validator::make($input, static::$rules);
 

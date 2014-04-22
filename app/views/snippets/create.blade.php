@@ -14,6 +14,6 @@
 
 @section('scripts')
 	<script>
-		$('textarea').height($(window).height() - 50);
+		$('textarea').height($(window).height() - 500);
 	</script>
 @endsection
