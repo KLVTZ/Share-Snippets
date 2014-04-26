@@ -17,7 +17,7 @@
 Route::get('/', function()
 {
 	Queue::push('FileTimeWriter', ['time' => time()]);
-}
+});
 
 Route::post('queue', function()
 {
