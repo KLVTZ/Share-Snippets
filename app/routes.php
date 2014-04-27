@@ -28,7 +28,7 @@ class FileTimeWriter
 {
 	public function fire($job, $date)
 	{
-		File::append(app_path() . '/time.txt', $date['time'] . " $job " . PHP_EOL);
+		File::append(app_path() . '/time.txt', $date['time'] . PHP_EOL);
 	}
 }
 
